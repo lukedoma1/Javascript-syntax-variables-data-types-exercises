@@ -17,7 +17,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_01();
+  exercise_07();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -31,7 +31,7 @@ function exercise_01() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  console.log("Hello, World!");
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -49,7 +49,13 @@ function exercise_02() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let myAge = 23;
+  const myName = "Luke";
+  console.log(`My age: ${myAge}`);
+  console.log(`My name: ${myName}`);
+  console.log('My age:', myAge, "My name:", myName);
+  console.log('My age: ' + myAge + ' My name: ' + myName);
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -76,7 +82,11 @@ function exercise_03() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let sum = num1 + num2;
+  let subtract = num1 - num2;
+  let multiply = num1 * num2;
+  let divide = num1 / num2;
+  console.log(`sum: ${sum}, subtract: ${subtract}, multiply: ${multiply}, divide: ${divide}`);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -95,7 +105,13 @@ function exercise_04() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let x;
+  x = 1;
+  console.log(typeof(x));
+  x = "luke";
+  console.log(typeof(x));
+  x = true;
+  console.log(typeof(x));
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -113,7 +129,9 @@ function exercise_05() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let isAvailable = true;
+  isAvailable = !isAvailable;
+  console.log(isAvailable);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -138,7 +156,13 @@ function exercise_06() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let message = "hi";
+  let upper = message.toUpperCase();
+  let lower = message.toLowerCase();
+  let length = message.length;
+  console.log(upper);
+  console.log(lower);
+  console.log(length);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -165,7 +189,9 @@ function exercise_07() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let name = "Luke";
+  let greeting = `Hello, ${name}! Welcome to JavaScript!`;
+  console.log(greeting);
 
   // CODE IN THE OPEN LINES ABOVE
 }
