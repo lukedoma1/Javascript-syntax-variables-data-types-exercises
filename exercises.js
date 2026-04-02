@@ -1,3 +1,4 @@
+import { generateKey } from "crypto";
 import { fileURLToPath } from "url";
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
@@ -17,7 +18,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_07();
+  exercise_19();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -212,7 +213,10 @@ function exercise_08() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let var1;
+  console.log(var1);
+  var1 = null;
+  console.log(var1);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -232,7 +236,9 @@ function exercise_09() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let book = {title: "Magic of Theives", author: "C.Greenwood", publishedYear: "2012"};
+
+  console.log(book);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -251,8 +257,10 @@ function exercise_10() {
   */
 
   // CODE IN THE OPEN LINES BELOW
+  let book = {title: "Magic of Theives", author: "C.Greenwood", publishedYear: "2012"};
+  console.log(book.title);
+  console.log(book['author']);
 
-  const placeholder = "Delete this line and code here";
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -274,7 +282,10 @@ function exercise_11() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let book = {title: "Magic of Theives", author: "C.Greenwood", publishedYear: "2012"};
+  book.publishedYear = 2013;
+  book['genre'] = "Fantasy";
+  console.log(book);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -293,7 +304,10 @@ function exercise_12() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let book = {title: "Magic of Theives", author: "C.Greenwood", publishedYear: "2012"};
+  console.log(book);
+  delete book.author;
+  console.log(book);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -324,7 +338,10 @@ function exercise_13() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  console.log(original.name);
+  copy.name = "Bob";
+  console.log(original.name);
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -344,7 +361,9 @@ function exercise_14() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let currentDate = Date();
+
+  console.log(currentDate);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -366,7 +385,11 @@ function exercise_15() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let currentDate = new Date();
+  console.log(currentDate.getFullYear());
+  console.log(currentDate.getMonth() + 1);
+  console.log(currentDate.getDate());
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -379,7 +402,7 @@ function exercise_16() {
     Custom Dates
     
     1. Create a new variable `birthday` and assign it a new Date object that represents your birthday.
-        REMEBER - months are zero-indexed in the Date object
+        REMEMBER - months are zero-indexed in the Date object
 
         To generate a date for a 01/29/1994 birthday, the code would look like this:
         const birthday = new Date(1994, 0, 29)
@@ -391,9 +414,11 @@ function exercise_16() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let birthday = new Date(2003, 2, 4);
 
-  // CODE IN THE OPEN LINES ABOVE
+  let myBirthday = birthday.toDateString();
+
+  console.log(myBirthday);
 }
 
 function exercise_17() {
@@ -418,7 +443,11 @@ function exercise_17() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let currentDate = new Date();
+  let difference = currentDate - pastDate;
+  difference = difference / (1000*60*60*24);
+  difference = Math.ceil(difference);
+  console.log(difference);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -449,8 +478,11 @@ function exercise_18() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let overall = "With Plus Operator: " + msgPart1 + " " + msgPart2 + "!"; 
+  console.log(overall);
 
+  let templateLiteral = `With Template Literal: ${msgPart1} ${msgPart2}!`;
+  console.log(templateLiteral);
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -482,7 +514,12 @@ function exercise_19() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  console.log(text.includes("JavaScript"));
+
+  console.log(text.includes("Python"));
+
+  console.log(text.includes("javascript"));
+  //this returns false because .includes method is case sensitive
 
   // CODE IN THE OPEN LINES ABOVE
 }
